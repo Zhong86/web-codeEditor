@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+.App-Light, .App-Dark {
+  position:absolute; 
+  width: 100%; 
+  height: 100%; 
+}
+.App-Light {
+  background-color: rgb(250,250,250);  
+  color: rgb(50,50,50); 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-Dark {
+  background-color: rgb(50,50,50); 
+  color: rgb(250,250,250); 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  text-align:center; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.tab-button-container {
+  min-width: 300px; 
+  max-width: 100%; 
+  display: flex; 
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.editor-container {
+  min-width: 500px; 
+  max-width: 90%;
+  border-radius: 4px; 
+  margin:auto;
+  margin-top: 5%; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cmd {
+  position: absolute; 
+  min-width: 500px;
+  bottom: 5px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+}
+
+/* toggle darkmode */
+.toggle-dark, .toggle-light {
+  display: flex; 
+  padding: 3px; 
+  border-radius: 4px; 
+  position:absolute; 
+  top: 5px; 
+  right: 5px; 
+}
+
+.toggle-dark {
+  background-color: rgb(50, 50, 50); 
+  border: 1px solid rgb(250, 250, 250); 
+}
+
+.toggle-light {
+  background-color: rgb(250, 250, 250); 
+  border: 1px solid rgb(50,50,50); 
+}
+
+.dark-mode, .light-mode {
+  margin: 3px; 
+  padding: 3px; 
+  cursor: pointer; 
+  border-radius: 4px; 
+  width: 50px; 
+  text-align: center; 
+}
+
+.dark-mode {
+  background-color: rgb(50,50,50); 
+  color: rgb(250, 250, 250); 
+}
+.light-mode {
+  background-color:rgb(250, 250, 250); 
+  color: rgb(50,50,50); 
 }
